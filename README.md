@@ -3,6 +3,8 @@
 ## Taches accomplies :
 
   ### Etape 1
+  
+  ----------------
 
       1. Création d'un compte Github 
       
@@ -16,15 +18,19 @@
 
       4. Mise en place d'un repository Git sur mon compte pour le projet
       
-      5. le compte SebDruon a été ajouté comme collaborateur à mon projet
+      5. le compte SebDruon a été ajouté comme collaborateur à mon projet  
   
   ### Etape 2
+  
+  ----------------
   
       1. Comprendre la notion de pointeur ( si besoin, demander au prof de faire un petit topo a votre groupe )
       
       2. Makefile mise en place dans mon projet pour faciliter les compilations
       
   ### Etape 3
+  
+  ----------------
       
       1. Se documenter sur la notion de socket, et leur utilisation en C
       
