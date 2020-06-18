@@ -14,7 +14,7 @@ typedef struct User
 	char nom[30];
 	int age;
 }User;
-
+//test
 
 void *function(void *arg)
 {
