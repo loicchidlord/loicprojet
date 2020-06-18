@@ -15,23 +15,23 @@
          * Push       **_OK_** 
          * Pull       **_OK_**  
 
-   4. Mise en place d'un repository Git sur mon compte pour le projet
+   4. Mise en place d'un repository Git sur mon compte pour le projet   **_OK_**
       
-   5. le compte SebDruon a été ajouté comme collaborateur à mon projet  
+   5. le compte SebDruon a été ajouté comme collaborateur à mon projet    **_OK_** 
   
   ### Etape 2
   
   ----------------
   
-   1. Comprendre la notion de pointeur ( si besoin, demander au prof de faire un petit topo a votre groupe )
+   1. Comprendre la notion de pointeur ( si besoin, demander au prof de faire un petit topo a votre groupe )    **_OK_**
       
-   2. Makefile mise en place dans mon projet pour faciliter les compilations
+   2. Makefile mise en place dans mon projet pour faciliter les compilations    **_OK_**
       
   ### Etape 3
   
   ----------------
       
-   1. Se documenter sur la notion de socket, et leur utilisation en C
+   1. Se documenter sur la notion de socket, et leur utilisation en C   **_OK_**
       
    2. Ecrire un exemple client / serveur avec :
    
@@ -42,6 +42,6 @@
    
    ----------------
    
-   1. tester votre programme avec 1 serveur et 5 clients simultanés
+   1. tester votre programme avec 1 serveur et 5 clients simultanés   **_OK_**
    2. modifier votre programme afin que tous les clients reçoivent le "bonjour" lorsque l'un d'entre eux emet un coucou
       
