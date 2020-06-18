@@ -5,15 +5,15 @@
   ### Etape 1
   ----------------
 
-   1. Création d'un compte Github 
+   1. Création d'un compte Github     **_OK_**
       
-   2. Création et installation d'une clé SSH 
+   2. Création et installation d'une clé SSH    **_OK_**
       
    3. Réalisation des opérations suivantes  
-         * Clone
-         * Commit  
-         * Push  
-         * Pull  
+         * Clone      **_OK_**
+         * Commit     **_OK_**  
+         * Push       **_OK_** 
+         * Pull       **_OK_**  
 
    4. Mise en place d'un repository Git sur mon compte pour le projet
       
@@ -37,4 +37,11 @@
    
           Le client qui envoie "coucou" au serveur
           Le serveur qui répond "Bonjour" à chaque coucou reçu ( et rien si ce n'est pas un coucou)
+          
+   ### Etape 4
+   
+   ----------------
+   
+   1. tester votre programme avec 1 serveur et 5 clients simultanés
+   2. modifier votre programme afin que tous les clients reçoivent le "bonjour" lorsque l'un d'entre eux emet un coucou
       
