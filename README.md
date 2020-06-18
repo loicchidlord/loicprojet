@@ -14,7 +14,7 @@
             + Clone
             * Commit  
             * Push  
-            * Pull  
+            * Pull  <p style='color:red'>This is some red text.</p>
 
       4. Mise en place d'un repository Git sur mon compte pour le projet
       
