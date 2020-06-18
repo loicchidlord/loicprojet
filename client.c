@@ -13,7 +13,7 @@ typedef struct User
 	char nom[30];
 	int age;
 }User;
-
+//test
 
 int main(void)
 {
