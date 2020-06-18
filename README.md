@@ -1,2 +1,0 @@
-#loic Chidlord
-#Super projet
