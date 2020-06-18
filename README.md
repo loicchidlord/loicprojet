@@ -11,7 +11,7 @@
       2. Création et installation d'une clé SSH 
       
       3. Réalisation des opérations suivantes  
-            * Clone  ```diff + fait ```
+            + Clone
             * Commit  
             * Push  
             * Pull  
