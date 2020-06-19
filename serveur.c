@@ -1,3 +1,5 @@
+//SERVEUR
+
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -14,15 +16,25 @@ typedef struct User
 	char nom[30];
 }User;
 
+typedef struct Great
+{
+	char noms[30];
+}Great;
+
 
 void *function(void *arg)
 {
 	int socket = *(int*)arg;
-	char msg[] = "Taper votre nom 2 fois";
+	char msg[] = "Taper votre message";
 	User user;
-	send(socket, msg , strlen(msg)+1, 0);
+	send(socket, msg, strlen(msg), 0);
 	recv(socket, &user, sizeof(user), 0);
-	printf("Le client est %s \n", user.nom);
+	printf("Le client : %s \n", user.nom);
+	char message[] = "Coucou";
+
+	Great great;
+	send(socket, message, strlen(msg), 0);
+	recv(socket, &great, sizeof(great), 0);
 	close(socket);
 	free(arg);
 	pthread_exit(NULL);
@@ -51,7 +63,7 @@ int main(void)
 		struct sockaddr_in addrClient;
 		socklen_t csize = sizeof(addrServer);
 		int socketClient = accept(socketServer, (struct sockaddr *)&addrClient, &csize);
-		printf("accept\n");
+		printf("Connexion acceptée \n");
 
 		printf("client %d\n", socketClient);
 
