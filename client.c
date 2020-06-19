@@ -11,9 +11,9 @@
 typedef struct User
 {
 	char nom[30];
-	int age;
+	
 }User;
-//test
+
 
 int main(void)
 {
@@ -29,7 +29,7 @@ int main(void)
 	char msg[50];
 	recv(socketClient, msg, 48, 0);
 	printf("%s\n", msg);
-	scanf("%s %d", user.nom, &user.age);
+	scanf("%s ", user.nom);
 	send(socketClient, &user, sizeof(user), 0);
 
 	close(socketClient);
