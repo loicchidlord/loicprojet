@@ -1,3 +1,5 @@
+//CLIENT
+
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -13,6 +15,11 @@ typedef struct User
 	char nom[30];
 	
 }User;
+
+typedef struct Great
+{
+	char noms[30];
+}Great;
 
 
 int main(void)
@@ -31,6 +38,11 @@ int main(void)
 	printf("%s\n", msg);
 	scanf("%s ", user.nom);
 	send(socketClient, &user, sizeof(user), 0);
+
+	Great great;
+	char message[50];
+	recv(socketClient, message, 48, 0);
+	printf("Le Serveur : %s\n", message);
 
 	close(socketClient);
 
