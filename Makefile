@@ -1,27 +1,10 @@
-CC = gcc 
-# on utilsera $(CC) chaque fois qu'onvoudra faire allusion au compilateur
+all : prog
 
-EXEC = exe_name
-SRC = (willcard *.c) 
-OBJ = $(SRC:.c=.o) #remplace les fichiers objets
+prog : serveur.o client.o
+	gcc -o prog serveur.o -c client.o
 
-all : $(EXEC)
+serveur.o : serveur.c
+	gcc -pthread -o serveur -c serveur.c
 
-#toutes les cibles en .o je vais les créer à partir des .c
-%.o : %.c
-	$(CC) -o $(OBJ) -c $<
-
-#l'executable
-$(EXEC) : $(OBJ)
-	$(CC) -o $@ $^
-
-#Pour la suppression de tous les fichiers objet (command : make clean)
-clean : 
-	rm -rf *.o
-
-# Variable spéciales
-$@ nom cible
-$< nom pemière dépendance
-$^ liste dépendance
-$? liste dépendance plus récente que la cible
-$* nom du fichier, sans son extension
+client.o : client.c
+	gcc -o client -c client.c
