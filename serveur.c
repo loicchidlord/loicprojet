@@ -1,5 +1,3 @@
-//SERVEUR
-
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -30,7 +28,7 @@ void *function(void *arg)
 	send(socket, msg, strlen(msg), 0);
 	recv(socket, &user, sizeof(user), 0);
 	printf("Le client : %s \n", user.nom);
-	char message[] = "Coucou";
+	char message[] = "Bonjour";
 
 	Great great;
 	send(socket, message, strlen(msg), 0);
