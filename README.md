@@ -33,7 +33,7 @@
       
    1. Se documenter sur la notion de socket, et leur utilisation en C   **_OK_**
       
-   2. Ecrire un exemple client / serveur avec :
+   2. Ecrire un exemple client / serveur avec : **_OK_**
    
           Le client qui envoie "coucou" au serveur
           Le serveur qui répond "Bonjour" à chaque coucou reçu ( et rien si ce n'est pas un coucou)
@@ -43,5 +43,11 @@
    ----------------
    
    1. tester votre programme avec 1 serveur et 5 clients simultanés   **_OK_**
-   2. modifier votre programme afin que tous les clients reçoivent le "bonjour" lorsque l'un d'entre eux emet un coucou
+   2. modifier votre programme afin que tous les clients reçoivent le "bonjour" lorsque l'un d'entre eux emet un coucou **_OK_**
+   
+   ### Etape 5
+   
+   ----------------
+   
+   
       
