@@ -1,10 +1,12 @@
-all : prog
+all : serveur client
 
-prog : serveur.o client.o
-	gcc -o prog serveur.o -c client.o
+serveur : serveur.c 
+	gcc -o serveur serveur.c -lpthread
 
-serveur.o : serveur.c
-	gcc -pthread -o serveur -c serveur.c
+client : client.c 
+	gcc -o client client.c
 
-client.o : client.c
-	gcc -o client -c client.c
+clean:
+		rm -f client
+		rm -f serveur
+		rm -f *.o
